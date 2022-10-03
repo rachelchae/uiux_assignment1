@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personas and Storyboarding</title>
+    <!-- import Javascript variables and functions -->
+    <script src="app.js" defer></script>
+    <!-- import CSS Styles -->
+    <link rel="stylesheet" href="styles.css" /> 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="assets/chevron-down.svg"/>
+    <!-- import Bootstrap Files-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!--import FontAwesome Files-->
+    <i class="fa-solid fa-link"></i>
+    <i class="fa-solid fa-caret-down"></i>
+    <!--import jQuery-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+ 
+  </head>
+
+  <!-- Page Content -->
+  <body>
+    <style>
+      .persona-row {
+        background-color: maroon;
+        height: 400px;
+      }
+    </style>
+    
+    <!-- Navbar-->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3"> 
+      <div class="container">
+        <a href="#" class="navbar-brand">the vdub waffle maker</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="#interview-sec">questions</a>
+            <a class="nav-item nav-link" href="#">personas</a>
+            <a class="nav-item nav-link" href="#">storyboard</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    
+    <!-- Cover Section -->
+    <section id="cover" class="d-flex align-items-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+            <h1>the vdub waffle maker</h1>
+          </div>
+          <div class="col-lg-6 order-1 order-lg-2 waffle-maker-img" data-aos="zoom-in" data-aos-delay="200">
+            <!--Bear Image-->
+            <img class="gallery-item" src="./assets/bears_singing.jpg" alt="bears singing">
+          </div>
+        </div>
+      </div>
+    </section>  
+    
+    <!-- User Observations-->
+    <section id="observations" class="observations">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row justify-content-center">
+          <div class="col d-flex-column" data-aos="fade-right" data-aos-delay="100">
+            <p class="fst-italic">
+              user interactions
+            </p>
+            <h3> how our users interact with the interface </h3>
+            <img src="assets/avatar-pic.jpg" class="img-fluid" alt="">
+          </div>
+          
+          <div class="col d-flex-column" data-aos="fade-left" data-aos-delay="100">
+            <h5>
+              summary of observations
+            </h5>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Interview Section -->
+    <section id="interview-sec" class="interviews">
+      <div class="container-fluid" data-aos="fade-up">
+        <div class="row">
+          
+          <div class="section-headers">
+            <h2> interview questions </h1>
+            <p> see what the users have said about me!</p>
+          </div>
+          
+          <div class="questions">
+            <ul class="list-group">
+              <li class="list-group-item">
+                <h5> 1. What motivates you to use this waffle machine at the VDub  rather than going to eat Ratty’s breakfast menu? What are the goals you hope to achieve from using this interface? </h5>
+              </li>
+              <li class="list-group-item">
+                <h5> 2. Rethink back to your first try at making a waffle at this station. Did you read the instructions on the waffle machine? </h5>
+              </li>
+              <li class="list-group-item">
+                <h5> 3. When seeing the interface, which component of it do your eyes lead to? What component of the waffle machine stands out the most to you?  </h5>
+              </li>
+              <li class="list-group-item">
+                <h5> 4. Does the color and design of this interface entice your taste buds? </h5>
+              </li>
+              <li class="list-group-item">
+                <h5> 5. What could make this waffle machine stand out better amongst the other interfaces? What could make this interface look better/be more appealing? </h5>
+              </li>
+              <li class="list-group-item">
+                <h5> 6. What are some inner thoughts/questions you have had about the interface while waiting for the machine to cook your waffles? </h5>
+              </li>
+            </ul>
+          </div>
+
+    </section>
+    
+    <!-- Personas Section -->
+    <section id="persona-sec" class="d-flex align-items-center">
+      <div class="container" data-aos="fade-up">
+        <div class="personas-title">
+          <h2>empathy maps</h2>
+          <p> come meet our two users!</p>
+        </div>
+        
+        <!--Two Personas Go Here-->
+        <div class="row justify-content-around align-items-center" id="persona-row"> 
+            <div class="col-sm col-md col-lg align-items-center"> 
+              <div class="p-3 bg-transparent">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="assets/avatar-pic.jpg" alt="avatar" style="width:300px;height:300px;">
+                    </div>
+                    <div class="flip-card-back">
+                      <h1>stressed sally</h1>
+                      <p>blah blah</p>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+            </div>
+
+            <div class="col-sm col-md col-lg align-items-center"> 
+              <div class="p-3 bg-transparent">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="assets/avatar-pic.jpg" alt="avatar" style="width:300px;height:300px;">
+                    </div>
+                    <div class="flip-card-back">
+                      <h1>relaxed robert</h1>
+                      <p>blah blah</p>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Storyboard Section -->
+    
+  <!-- Scroll Fade -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+
+</html>

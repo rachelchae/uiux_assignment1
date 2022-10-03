@@ -1,0 +1,124 @@
+  #observations {
+    padding-top:50px;
+    padding-bottom: 100px;
+    background-color: brown;
+  }
+
+  #interview-sec {
+    padding-top: 100px;
+    padding-bottom: 200px;
+  }
+
+  .navbar a {
+    color: black;
+  }
+
+  #cover {
+    padding-block-start: 100px;
+    padding-bottom: 100px;
+  }
+
+  h5 {
+    font-size: 105px;
+  }
+  
+
+  #interview-sec{
+    background-color: black;
+  }
+
+  #persona-sec {
+      padding-block-start: 50px;
+      padding-block-end: 100px;
+      background-color: maroon;
+  }
+
+  .persona-row {
+    background-color: maroon;
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+  }
+  
+  h1 {
+    color: brown;
+    text-align:center;
+  }
+  
+  h2 {
+    color:cornsilk;
+    text-align:center;
+  }
+  
+  p {
+    font-size: 30px;
+    text-align: center;
+    color: burlywood;
+  }
+  
+  /* 
+  Selects all image tags and makes them 500px;
+  */
+  img {
+    object-fit: cover;
+    height: 500px;
+    width: 500px;
+  }
+  
+  .gallery-container {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+  }
+  
+
+  /* MAKING THE FLIP CARD*/
+  .flip-card{
+    margin: 0 auto;
+    float: none;
+    background-color: transparent;
+    width: 400px;
+    height: 500px;
+    border: 1px transparent;
+    perspective: 1000px;
+  }
+
+  .row {
+    justify-content: center;
+  }
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+    
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+  }
+
+  
+  .flip-card-front {
+    background-color: white;
+    color: black;
+  }
+
+
+  .flip-card-back {
+    background-color: white;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  
